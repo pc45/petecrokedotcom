@@ -191,29 +191,29 @@ export function Album() {
                   </div>
                   <div className="flex justify-between items-center">
                     <div>
-                      <h3 className="text-sm text-white font-extrabold font-display">
+                      <h3 className="text-md text-white font-extrabold font-display">
                           {album.name}
                       </h3>
                     </div>
                     <div className="flex space-x-2 items-center mt-2">
                       {album.bandcamp !== "" &&
                           <a href={album.bandcamp} target="_blank" rel="noreferrer">
-                            <img className="w-16 h-12"
+                            <img className="w-16 h-12 bg-red-700 rounded-lg"
                                src="img/2022/bandcamp-logotype-svgrepo-com.svg"
                                alt="Bandcamp"/>
                           </a>
                       }
                       {album.applemusic !== "" &&
                           <a href={album.applemusic} target="_blank" rel="noreferrer">
-                          <img className="w-16 h-12"
+                          <img className="w-16 h-12 bg-red-700 rounded-lg"
                                src="img/2022/apple-music-logo.png"
                                alt="Apple Music"/>
                           </a>
                       }
                       {album.spotify !== "" &&
                           <a href={album.spotify} target="_blank" rel="noreferrer">
-                          <img className="w-16 h-12"
-                               src="img/2022/Spotify_logo_with_text.svg"
+                          <img className="w-16 h-12 bg-red-700 rounded-lg"
+                               src="img/2022/Spotify-Black-Logo.wine.svg"
                                alt="Spotify"/>
                           </a>
                       }

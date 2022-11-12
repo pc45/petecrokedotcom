@@ -23,51 +23,17 @@ export default function Home() {
         <title>
           petecroke.com
         </title>
+
         <meta name="description" content="Pete Croke"/>
       </Head>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
+        <div>
+          <div className="text-left ml-8 mt-2 text-md font-display font-bold text-white">petecroke.com</div>
+          <Album />
+        </div>
         <div>
           <Aside />
         </div>
-        <div className="rounded-md border-red-700">
-          <div className="float-right mr-8 mt-2 text-sm text-white">petecroke.com</div>
-          <Album />
-        </div>
-        {/*
-        <NavBar />
-        <TableOfContents />
-        <Testimonial
-            id="tommy-stroman-testimonial-1"
-            author={{
-              name: 'Tommy Stroman',
-              role: 'Front-end developer',
-              image: avatarImage1,
-            }}
-        >
-          <p>
-            “I didn’t know a thing about icon design until I read this book. Now I
-            can create any icon I need in no time. Great resource!”
-          </p>
-        </Testimonial>
-        <Screencasts />
-        <Testimonial
-            id="gerardo-stark-testimonial-2"
-            author={{
-              name: 'Gerardo Stark',
-              role: 'Creator of Pandemicons',
-              image: avatarImage2,
-            }}
-        >
-          <p>
-            “I’ve tried to create my own icons in the past but quickly got
-            frustrated and gave up. Now I sell my own custom icon sets online.”
-          </p>
-        </Testimonial>
-        <Resources />
-        <FreeChapters />
-        <Pricing />
-        <Testimonials />
-        <Author />*/}
       </div>
       <Footer />
     </>
