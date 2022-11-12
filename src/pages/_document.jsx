@@ -2,7 +2,7 @@ import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html className="scroll-smooth bg-white antialiased" lang="en">
+    <Html className="scroll-smooth antialiased bg-red-700" lang="en">
       <Head>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +30,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <body className="bg-red-700">
+      <body className="">
         <Main />
         <NextScript />
       </body>

@@ -179,7 +179,7 @@ export function Album() {
           <div className="border-white border-2">
             <h2 className="p-2 font-display text-4xl font-bold tracking-wide text-white">Discography</h2>
           </div>
-          <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
+          <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 md:grid-cols-3 xl:gap-x-8">
             {albums.map((album) => (
                 <div key={album.id} className="group relative">
                   <div className="bg-gray-200 aspect-square overflow-hidden group-hover:opacity-75">
