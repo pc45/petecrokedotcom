@@ -31,6 +31,11 @@ export default function Document() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className="">
+      <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-BQ9GY2DQ3M" height="0" width="0" style="display: none; visibility: hidden;" />`,
+          }}
+      />
         <Main />
         <NextScript />
       </body>
