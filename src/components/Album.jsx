@@ -184,12 +184,12 @@ export function Album() {
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 md:grid-cols-3 xl:gap-x-8">
             {albums.map((album) => (
                 <div key={album.id} className="group relative">
-                  <div className="bg-gray-200 aspect-square overflow-hidden group-hover:opacity-75">
+                  <div className="bg-gray-200 relative aspect-square overflow-hidden group-hover:opacity-75">
                     <Image
                         src={album.imageSrc}
                         layout="fill"
-                        objectFit="cover" // change to suit your needs
-                        className="object-center shadow-lg cursor-pointer"
+
+                        className="object-center shadow-lg"
                         alt={album.name}
                     />
                   </div>
@@ -202,21 +202,21 @@ export function Album() {
                     <div className="flex space-x-2 items-center mt-2">
                       {album.bandcamp !== "" &&
                           <a href={album.bandcamp} target="_blank" rel="noreferrer">
-                            <img className="w-16 h-12 bg-red-700 rounded-lg"
+                            <img className="w-16 h-12 bg-red-700 hover:bg-white rounded-lg"
                                src="img/2022/bandcamp-logotype-svgrepo-com.svg"
                                alt="Bandcamp"/>
                           </a>
                       }
                       {album.applemusic !== "" &&
                           <a href={album.applemusic} target="_blank" rel="noreferrer">
-                          <img className="w-16 h-12 bg-red-700 rounded-lg"
+                          <img className="w-16 h-12 bg-red-700 hover:bg-white rounded-lg"
                                src="img/2022/apple-music-logo.png"
                                alt="Apple Music"/>
                           </a>
                       }
                       {album.spotify !== "" &&
                           <a href={album.spotify} target="_blank" rel="noreferrer">
-                          <img className="w-16 h-12 bg-red-700 rounded-lg"
+                          <img className="w-16 h-12 bg-red-700 hover:bg-white rounded-lg"
                                src="img/2022/Spotify-Black-Logo.wine.svg"
                                alt="Spotify"/>
                           </a>
