@@ -2,6 +2,15 @@ import Image from 'next/image'
 
 const albums = [
   {
+    id: 24,
+    name: 'VOL4TUS',
+    imageSrc: '/img/2022/a2370028262_10.jpeg',
+    imageAlt: "VOL4TUS",
+    bandcamp: "https://volutus.bandcamp.com/album/vol4tus",
+    applemusic: "",
+    spotify: "",
+  },
+  {
     id: 21,
     name: 'VOL3TUS',
     imageSrc: '/img/2022/a2370028262_10.jpeg',
