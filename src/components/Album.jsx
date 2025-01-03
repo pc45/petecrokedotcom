@@ -4,7 +4,7 @@ const albums = [
   {
     id: 24,
     name: 'VOL4TUS',
-    imageSrc: '/img/2022/a2370028262_10.jpeg',
+    imageSrc: '/img/2022/a0663276000_16.jpg',
     imageAlt: "VOL4TUS",
     bandcamp: "https://volutus.bandcamp.com/album/vol4tus",
     applemusic: "",
